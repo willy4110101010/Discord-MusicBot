@@ -2,9 +2,9 @@ module.exports = {
 	helpCmdPerPage: 10, //- Number of commands per page of help command
 	lyricsMaxResults: 5, //- Number of results for lyrics command (Do not touch this value if you don't know what you are doing)
 	adminId: "UserId", //- Replace UserId with the Discord ID of the admin of the bot
-	token: process.env.token || "", //- Bot's Token
-	clientId: process.env.clientId || "", //- ID of the bot
-	clientSecret: process.env.clientSecret || "", //- Client Secret of the bot
+	token: process.env.token || "MTI4MzA2MTIzNDc2NTM5ODA3OQ.Ge_Cds.lv8gpcyG8ZvwXt0dzelvHvZOR6HpVsogLNCeV0", //- Bot's Token
+	clientId: process.env.clientId || "1283061234765398079", //- ID of the bot
+	clientSecret: process.env.clientSecret || "laGMnJEKy6OT3idMp3VUyGjK8zM3KHkU", //- Client Secret of the bot
 	port: 4200, //- Port of the API and Dashboard
 	scopes: ["identify", "guilds", "applications.commands"], //- Discord OAuth2 Scopes
 	inviteScopes: ["bot", "applications.commands"], // Invite link scopes
@@ -33,6 +33,13 @@ module.exports = {
 			retryDelay: 40, //- Delay between reconnect attempts if connection is lost.
 			secure: false, //- Can be either true or false. Only use true if ssl is enabled!
 		},
+
+		Spotify: {
+
+               ClientID: process.env.Spotify_ClientID  "4f36ddb13ad642fcab6cfdd122d1277a". //Spotify Client 10
+
+                ClientSecret: process.env.Spotify_ClientSecret  "9737ee90bb9c43d8bd3d0758817b8c54", //Spotify Client Se
+	      },
 	],
 	embedColor: "#2f3136", //- Color of the embeds, hex supported
 	presence: {
