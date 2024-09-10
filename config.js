@@ -1,49 +1,41 @@
 module.exports = {
-	helpCmdPerPage: 10, //- Number of commands per page of help command
-	lyricsMaxResults: 5, //- Number of results for lyrics command (Do not touch this value if you don't know what you are doing)
-	adminId: "UserId", //- Replace UserId with the Discord ID of the admin of the bot
-	token: process.env.token || "", //- Bot's Token
-	clientId: process.env.clientId || "", //- ID of the bot
-	clientSecret: process.env.clientSecret || "", //- Client Secret of the bot
-	port: 4200, //- Port of the API and Dashboard
-	scopes: ["identify", "guilds", "applications.commands"], //- Discord OAuth2 Scopes
-	inviteScopes: ["bot", "applications.commands"], // Invite link scopes
-	serverDeafen: true, //- If you want bot to stay deafened
-	defaultVolume: 100, //- Sets the default volume of the bot, You can change this number anywhere from 1 to 100
-	supportServer: "https://discord.gg/sbySMS7m3v", //- Support Server Link
-	Issues: "https://github.com/SudhanPlayz/Discord-MusicBot/issues", //- Bug Report Link
-	permissions: 277083450689, //- Bot Inviting Permissions
-	disconnectTime: 30000, //- How long should the bot wait before disconnecting from the voice channel (in miliseconds). Set to 1 for instant disconnect.
-	twentyFourSeven: false, //- When set to true, the bot will never disconnect from the voice channel
-	autoQueue: false, //- When set to true, related songs will automatically be added to the queue
-	autoPause: true, //- When set to true, music will automatically be paused if everyone leaves the voice channel
-	autoLeave: false, //- When set to true, the bot will automatically leave when no one is in the voice channel (can be combined with 24/7 to always be in voice channel until everyone leaves; if 24/7 is on disconnectTime will add a disconnect delay after everyone leaves.)
-	debug: false, //- Debug mode
-	cookieSecret: "CodingWithSudhan is epic", //- Cookie Secret
-	website: "http://localhost:4200", //- without the / at the end
-	// You need a lavalink server for this bot to work!!!!
-	// Lavalink server; public lavalink -> https://lavalink-list.darrennathanael.com/; create one yourself -> https://darrennathanael.com/post/how-to-lavalink
-	nodes: [
-		{
-			identifier: "Main Node", //- Used for indentifier in stats commands.
-			host: "", //- The host name or IP of the lavalink server.
-			port: 80, // The port that lavalink is listening to. This must be a number!
-			password: "", //- The password of the lavalink server.
-			retryAmount: 200, //- The amount of times to retry connecting to the node if connection got dropped.
-			retryDelay: 40, //- Delay between reconnect attempts if connection is lost.
-			secure: false, //- Can be either true or false. Only use true if ssl is enabled!
-		},
-	],
-	embedColor: "#2f3136", //- Color of the embeds, hex supported
-	presence: {
-		// PresenceData object | https://discord.js.org/#/docs/main/stable/typedef/PresenceData
-		status: "online", //- You can have online, idle, dnd and invisible (Note: invisible makes people think the bot is offline)
-		activities: [
-			{
-				name: "Music", //- Status Text
-				type: "LISTENING", //- PLAYING, WATCHING, LISTENING, STREAMING
-			},
-		],
+Admins: ["UserID", "UserID"], 
+ExpressServer: true, 
+DefaultPrefix: process.env.Prefix  ">",
+Port: 3000, 
+SupportServer: "https://discord.gg/sbySMS7m3v", 
+Token: process.env.Token 11
+"MTI4MzA5NjEzOTc0MjE4MzQ4NQ.GnIgqv.qe5wPwKAhd22hZq6AOP59GZX5UodyTWca_xBjw",  
+ClientID: process.env.Discord ClientID || "1283096139742183485", 7/Discord
+ClientSecret: process.env.Discord ClientSecret || "RhOPHdwCMVY3W40xV3Ada954rMXK82dG", 
+Scopes: ["identify", "guilds", "applications.commends"], 
+ServerDeafen: true, 
+DefaultVolume: 100, 
+CallbackURL: "/api/callback", 
+"24/7": false, 
+CookieSecret: "Pikachu is cute", 
+IconURL:
+"https://raw.githubusercontent.com/SudhanPlayz/Discord- MusicBot/master/assets/logo.gif", 
+Embed Color: "RANDOM",
+Permissions: 2205281600, 
+Website: process.env.Website  "https://example.com/",
+Presence: {
+status: "online", // You can show online, idle, and ded
+name: "Music", // The message shown type: "LISTENING", // PLYING, WATCHING, LISTENING, STREAMING
+type: "LISTENING", // PLAYING, WATCHING, LISTENING, STREAMING
+},
+Lavalink: {
+id: "Main", //- Used for indentifier. You can set this to whatever you want. 
+host: "losingtime.dpaste.org", // The host name or IP of the lavalink server.
+port: 2124, // The port that lavalink is listening to. This must be a number!
+pass: "SleepingOnTrains", // The password of the lavalink server.
+secure: false, // Set this to true if the lavalink uses SSL. if not set it to
+false.
+},
+//Please go to https://developer.spotify.com/dashboard/
+Spotify: {
+ClientID: process.env.Spotify_ClientID  "4f36ddb13ad642fcab6cfdd122d1277a",
+//Spotify Client 10
+ClientSecret: process.env. Spotify ClientSecret  "9737ee90bb9c43d8bd3d0758817b8c54", //Spotify Client Secret
 	},
-	iconURL: "https://cdn.darrennathanael.com/icons/spinning_disk.gif", //- This icon will be in every embed's author field
-};
+}:
